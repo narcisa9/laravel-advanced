@@ -10,15 +10,14 @@
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous">
     </script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
         <br>
-            <div class="col-lg-offset-4 col-lg-4">
-            @if ($errors->any())
+        @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
@@ -32,9 +31,6 @@
                <div class="form-group">
                  <input class="form-control" type="text" name="name" placeholder="Name">
                </div>
-               <div class="form-group">
-                 <input class="form-control" type="text" name="email" placeholder="Email">
-               </div>
                @captcha
                <div class="form-group">
                  <input class="btn btn-success" type="submit" >
@@ -46,8 +42,8 @@
     </div>
 </body>
 <script>
-  $(document).ready(function(){
-      $('#form').submit();
-  })
+$(document).ready(function(){
+    $('#form').submit;
+})
 </script>
 </html>

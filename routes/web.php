@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 Route::get('form','formController@index');
 Route::post('form','FormController@store');
+
+Route::get('formRecaptcha','formRecaptchaController@index');
+Route::post('formRecaptcha','formRecaptchaController@store');
